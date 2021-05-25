@@ -1,0 +1,10 @@
+mypy
+pytest
+pytest-cov
+pytest-mock
+numpy
+pandas
+pulp==2.0
+scipy
+matplotlib
+seaborn
