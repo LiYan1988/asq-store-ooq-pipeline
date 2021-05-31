@@ -21,11 +21,11 @@ class RAgentPipeline:
         self.wrapper_ooq_r_path = self.assortment_path / 'r_agent/r_agent/wrappers/wrapper_ooq.R'
 
     def clone_repos(self):
-        cmd_clone_assortment = f'git clone {self.ASSORTMENT_URL} {self.assortment_path}'
+        cmd_clone_assortment = f'git clone -b develop {self.ASSORTMENT_URL} {self.assortment_path}'
         os.makedirs(self.assortment_path, exist_ok=True)
         subprocess.run(cmd_clone_assortment.split())
 
-        cmd_clone_ooq = f'git clone {self.OOQ_URL} {self.ooq_path}'
+        cmd_clone_ooq = f'git clone -b develop {self.OOQ_URL} {self.ooq_path}'
         os.makedirs(self.ooq_path, exist_ok=True)
         subprocess.run(cmd_clone_ooq.split())
 
