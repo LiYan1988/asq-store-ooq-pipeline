@@ -30,8 +30,8 @@ class OOQPipeline:
         # Here I assume that the input csv files are saved in this way
         input_csv_path = str(input_csv_path / job_id)
         output_path = str(output_path / f'{job_id}/{experiment_name}')
-        lines[323] = f"    input_csv_path = pathlib.Path('{input_csv_path}')\n"
-        lines[325] = f"    output_path = pathlib.Path('{output_path}')\n"
+        lines[66] = f"    input_csv_path = pathlib.Path('{input_csv_path}')\n"
+        lines[68] = f"    output_path = pathlib.Path('{output_path}')\n"
 
         with open(self.work_dir / 'run_ooq.py', 'w') as fp:
             fp.writelines(lines)
