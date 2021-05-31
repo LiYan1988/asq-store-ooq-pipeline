@@ -91,7 +91,7 @@ class RAgentPipeline:
 
 
 if __name__ == '__main__':
-    main_path = pathlib.Path('/Users/liynx/working/ooq/asq-store-ooq-1261-size-number-experiments/experiment-4/')
+    main_path = pathlib.Path('/Users/liynx/working/ooq/asq-store-ooq-1261-size-number-experiments/experiment-5/')
     python_path = pathlib.Path('/Users/liynx/anaconda3/envs/asq-store-ooq-1261/bin/python')
     r_agent_pipeline = RAgentPipeline(main_path=main_path, python_path=python_path)
 
